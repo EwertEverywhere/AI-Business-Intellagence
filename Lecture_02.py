@@ -1,6 +1,8 @@
 
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+import array
 
 def printDataFormTable():
     path = "C:\\Users\\Eugen Ewert\\OneDrive\\Eugen Ewert\\03_Studium\\FOM\\01_Semester_01\\04_AI Business Intelligence\\01_DataSets\\"
@@ -85,11 +87,64 @@ print(new_tupel*2)
 new_stack = [1,2,3]
 print(new_stack)
 
+# attention, the list can not be transfered as an variable
 new_stack.append(4)
 print(new_stack)
 
 #new_new_stack = new_stack.pop
- 
+
+#dc 
+#dc
+
+
 #print(new_new_stack)
 
 
+# CRIP-DM
+
+#Cross industry standard process for data mining
+# 
+#  Busines und Datenverständis
+#  Datanvorbereitung und Modellierung
+#  Bewertung und Implementierung
+
+#bibliothiken
+# NumPy - mathematische funkionen für python. Zahlen, standardfuktionen.
+# https://numpy.org/
+
+# pandas - funktionalitäten zu datenmanipulation in der Regel 1 und 2 demensionallen daten.
+# standardfunktionen wie filtern, sortieren, transformieren (e.g. Überschreiben).
+# https://pandas.pydata.org/v
+
+# SciKit - Learn
+# Algoriethmen zu ML
+# Datenvorverarbeitung und Modellauswahl
+# Überwacht und unüberwacht
+# Tools zu Modellbewertung.
+# https://scikit-learn.org/stable/index.html
+
+# Matplotlib
+# Erstellen grafiken und diagramme
+# hohe flexibilität
+# Mehrebenentauglich
+
+df = pd.DataFrame(
+                    {
+                        'column1':[1,2,3,4],
+                        'column2':[10,20,30,40]
+                    }
+                )
+
+
+print(df)
+
+
+#x = array.array('i',[1,2,3])
+#y = array.array('i',[10,20,30])
+x = df['column1']
+y = df['column2']
+
+
+fig, ax = plt.subplots()
+ax.plot(x,y)
+plt.show()
