@@ -43,3 +43,7 @@ reg = model.fit(X,Y)
 
 print(model.intercept_)
 print(model.coef_)
+
+plt.scatter(df.Y, df.X1)
+
+plt.show()
