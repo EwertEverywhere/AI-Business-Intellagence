@@ -5,7 +5,6 @@ import numpy as np # Bibliothek zum Ausführen der statistischen und mathematisc
 import pandas as pd # Bibliothek für auslesen der Daten aus Dateien der verschiedenen Formate und bilden der Datenstrukturen. 
 # python -m pip install scikit-learn
 from sklearn.preprocessing import StandardScaler # ???
-
 scale = StandardScaler()
 
 # lese den Datensatz
@@ -39,3 +38,5 @@ std_scaled = np.std(scaled_x)
 std_scaled = round(std_scaled)
 
 print(std_scaled)
+
+#
